@@ -159,7 +159,7 @@ $categories = getCategories();
     <div class="row px-xl-5">
         <?php
         foreach($products as $featured_product) {
-            if($featured_product['is_featured']){
+            if($featured_product['is_featured']=='true'){
             ?>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                 <div class="product-item bg-light mb-4">
@@ -234,7 +234,7 @@ $categories = getCategories();
         <div class="row px-xl-5">
         <?php
         foreach ($products as $product) {
-            if ($product['is_recent']===true ) {
+            if ($product['is_recent']== 'true') {
                 ?>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                 <div class="product-item bg-light mb-4">
